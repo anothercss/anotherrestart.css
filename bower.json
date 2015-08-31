@@ -1,0 +1,26 @@
+{
+  "name": "anotherrestart.css",
+  "description": "another restart",
+  "license": "MIT",
+  "homepage": "https://github.com/anothercss/anotherWHAT.css",
+  "authors": [
+    "Benjamin Hinchley <benjaminhinchley@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anothercss/anotherWHAT.css.git"
+  },
+  "main": [
+    "anotherrestart.css"
+  ],
+  "keywords": [
+    "css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "gulpfile.js"
+  ]
+}
