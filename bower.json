@@ -1,20 +1,25 @@
 {
   "name": "anotherrestart.css",
-  "description": "another restart",
+  "description": "another css restart/reset thing",
   "license": "MIT",
-  "homepage": "https://github.com/anothercss/anotherWHAT.css",
+  "homepage": "https://github.com/anothercss/anotherrestart.css",
   "authors": [
     "Benjamin Hinchley <benjaminhinchley@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/anothercss/anotherWHAT.css.git"
+    "url": "https://github.com/anothercss/anotherrestart.css.git"
   },
   "main": [
-    "anotherrestart.css"
+    "anotherrestart.css",
+    "dist/anotherrestart.css",
+    "dist/anotherrestart.min.css"
   ],
   "keywords": [
-    "css"
+    "css",
+    "restart",
+    "reset",
+    "reboot"
   ],
   "ignore": [
     "**/.*",

@@ -96,6 +96,24 @@
       <li>Blueberry</li>
       <li>Cherry</li>
     </ul>
+
+    <ul>
+      <li>Orange</li>
+      <li>Apple</li>
+      <li>Rhubarb</li>
+      <li>Rasberry</li>
+      <li>Blueberry</li>
+      <li> A list inside a list
+        <ul>
+          <li>Orange</li>
+          <li>Apple</li>
+          <li>Rhubarb</li>
+          <li>Rasberry</li>
+          <li>Blueberry</li>
+          <li>Cherry</li>
+        </ul>
+      </li>
+    </ul>
     <h2>Ordered list</h2>
     <ol>
       <li>First</li>
@@ -103,7 +121,16 @@
       <li>Third</li>
       <li>Fourth</li>
       <li>Fifth</li>
-      <li>Sixth</li>
+      <li>Sixth
+        <ol>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
+          <li>Fifth</li>
+          <li>Sixth</li>
+        </ol>
+      </li>
     </ol>
     <h2>Definition list</h2>
     <dl>
@@ -268,11 +295,9 @@
 
   <section>
     <h1 class="other-class">Code examples</h1>
-    <pre>
-      <code>
-        sudo ipfw pipe 1 config bw 256KByte/s sudo ipfw add 1 pipe 1 src-port 3000
-      </code>
-    </pre>
+<pre>
+<code>for (var i = 0; i < 100; i++) { console.log(i) }</code>
+</pre>
   </section>
   <hr />
   <section>
@@ -384,7 +409,6 @@
         compatibility.
         -->
     <table>
-      <caption>This is a caption for a table</caption>
       <thead>
         <tr>
           <th>ID</th>
@@ -393,23 +417,18 @@
           <th>Address</th>
         </tr>
       </thead>
-      <tfoot>
-        <tr>
-          <td>Table footer info</td>
-        </tr>
-      </tfoot>
       <tbody>
         <tr>
-          <td>#999-32ac</td>
-          <td>First Name</td>
-          <td>13 May, 2013</td>
-          <td>999 Spruce Lane, Somewhere, CA 94101</td>
+          <td data-label="ID">#999-32ac</td>
+          <td data-label="Name">First Name</td>
+          <td data-label="Date">13 May, 2013</td>
+          <td data-label="Address">999 Spruce Lane, Somewhere, CA 94101</td>
         </tr>
         <tr>
-          <td>#888-32dd</td>
-          <td>Sample Name</td>
-          <td>17 May, 1984</td>
-          <td>999 Spruce Lane, Somewhere, CA 94101</td>
+          <td data-label="ID">#888-32dd</td>
+          <td data-label="Name">Sample Name</td>
+          <td data-label="Date">17 May, 1984</td>
+          <td data-label="Address">999 Spruce Lane, Somewhere, CA 94101</td>
         </tr>
       </tbody>
     </table>

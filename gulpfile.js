@@ -18,11 +18,6 @@ var paths = {
 }
 
 var processors = [
-  require('postcss-import')(),
-  require('postcss-selector-not')(),
-  require('postcss-custom-properties')(),
-  require('postcss-custom-media')(),
-  require('postcss-calc')(),
   require('autoprefixer-core')(),
   require('postcss-discard-comments')({
     removeAll: true
