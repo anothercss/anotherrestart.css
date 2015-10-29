@@ -1,4 +1,4 @@
-/*! anotherrestart.css | v0.1.0 | MIT | 24th Sep 2015 */
+/*! anotherrestart.css | v0.1.0 | MIT | 29th Oct 2015 */
  
 @-ms-viewport {
   width: device-width;
@@ -229,6 +229,7 @@ figure {
 }
 
 img {
+  display: block;
   margin: 0;
   width: 100%;
   height: auto;
