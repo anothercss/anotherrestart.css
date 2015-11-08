@@ -18,6 +18,11 @@ var paths = {
 }
 
 var processors = [
+  require('postcss-custom-properties')({
+    variables: {
+      "base-font-size": "16px"
+    }
+  }),
   require('autoprefixer-core')(),
   require('postcss-discard-comments')({
     removeAll: true
