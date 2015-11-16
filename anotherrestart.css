@@ -1,6 +1,5 @@
 /*! anotherrestart.css | MIT License */
 
-/* Make viewport responsive */
 @viewport {
   width: device-width;
   initial-scale: 1;
@@ -10,7 +9,8 @@ html {
   font-size: var(--base-font-size);
   font-family: sans-serif;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
 }
 
 *,
@@ -23,14 +23,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-
   width: 100%;
   height: 100%;
-
   font-size: 1em;
   line-height: 1.6;
   font-family: sans-serif;
-
   color: #1a1a1a;
   background-color: #fff;
 }
@@ -39,8 +36,8 @@ hr {
   height: 1px;
   background-color: #ddd;
   border: none;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 h1,
@@ -50,16 +47,31 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.6rem;
+
   line-height: 1.3;
 }
 
-h1 { font-size: 3.157em; }
-h2 { font-size: 2.369em; }
-h3 { font-size: 1.777em; }
-h4 { font-size: 1.333em; }
+h1 {
+  font-size: 3.157rem;
+}
+
+h2 {
+  font-size: 2.369rem;
+}
+
+h3 {
+  font-size: 1.777rem;
+}
+
+h4 {
+  font-size: 1.333rem;
+}
+
 h5,
-h6 { font-size: 1em; }
+h6 {
+  font-size: 1rem;
+}
 
 a,
 a:visited {
@@ -81,9 +93,11 @@ ul,
 ol,
 blockquote {
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.6rem;
+}
 
-  max-width: 30em;
+blockquote {
+  margin-right: 0;
 }
 
 ul,
@@ -102,90 +116,128 @@ ol {
 
 ul ul,
 ol ol {
-  margin-left: 1.5em;
+  margin-left: 1rem;
 }
 
-ul ul {
+ul ul,
+ol ul {
   list-style: circle inside;
 }
 
-ol ol {
+ol ol,
+ul ol {
   list-style: lower-roman inside;
 }
 
 pre,
-code,
-kbd {
-  overflow: auto;
+code {
+  padding: 1em;
+  background-color: #ddd;
+}
+
+pre {
   font-family: monospace;
+  white-space: pre;
+  white-space: pre-wrap;
+}
+
+code {
+  white-space: pre;
+  white-space: pre-wrap;
+  vertical-align: bottom;
 }
 
 blockquote {
   display: block;
   margin-left: 0;
-  padding-left: 1.5em;
-
+  padding-left: 1.6rem;
   border-left: 3px solid #ddd;
 }
 
-fieldset {
-  border: 2px solid #ddd;
+form {
+  margin-bottom: 1.6rem;
+}
 
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+fieldset {
+  padding-top: 1rem;
+  padding-right: 0.8rem;
+  padding-bottom: 1rem;
+  padding-left: 0.8rem;
+
+  margin-right: 0;
+  margin-left: 0;
+
+  border: 2px solid #ddd;
 }
 
 legend {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 label {
   display: block;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
-input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="url"],
 textarea {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+
+  width: 100%;
+
   font-size: inherit;
-
   border: 2px solid #ddd;
-
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 
 button,
 input[type*="button"],
 input[type*="submit"],
 input[type*="reset"] {
-  font-size: 1em;
-  line-height: 1em;
-
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #fff;
   color: #aaa;
   border: 2px solid #aaa;
   border-radius: 3px;
 }
 
-input:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="date"]:hover,
+input[type="number"]:hover,
+input[type="url"]:hover,
 textarea:hover {
   outline: none;
   border-color: #aaa;
 }
 
-input:active,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="date"]:active,
+input[type="number"]:active,
+input[type="url"]:active,
 textarea:active,
-input:focus,
 textarea:focus {
   outline: none;
   border-color: #0074D9;
@@ -221,7 +273,7 @@ figure {
   margin: 0;
 }
 
-img  {
+img {
   display: block;
   margin: 0;
   width: 100%;
@@ -229,62 +281,73 @@ img  {
 }
 
 /* Respnsive Tables */
-/* Idea and code from https://techblog.livingsocial.com/blog/2015/04/06/responsive-tables-in-pure-css/ */
+/* Idea from https://techblog.livingsocial.com/blog/2015/04/06/responsive-tables-in-pure-css/ */
 table {
-  border: 1px solid #ddd;
   width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0 0 1.6rem 0;
+  border: 0;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-table tr {
-  border: 1px solid #ddd;
-  padding: 5px;
+thead {
+  display: none;
 }
 
-table th, table td {
-  padding: 10px;
-  text-align: center;
-}
-
-table th {
-  text-transform: uppercase;
-  font-size: 14px;
+th {
+  padding: 0.75rem;
   letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+tr {
+  display: block;
+  padding: 0.375rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ddd;
+}
+
+td {
+  display: block;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  border-bottom: 0;
+}
+
+td::before {
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  content: attr(data-label);
+}
+
+@media screen and (min-width: 37.5em) {
   table {
-    border: 0;
+    border: 1px solid #ccc;
   }
 
-  table thead {
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    display: table-row;
+    margin-bottom: 0;
+  }
+
+  td {
+    display: table-cell;
+    text-align: center;
+  }
+
+  td::before {
     display: none;
-  }
-
-  table tr {
-    margin-bottom: 10px;
-    display: block;
-    border-bottom: 1px solid #ddd;
-  }
-
-  table td {
-    display: block;
-    text-align: right;
-    font-size: 0.85em;
-    border-bottom: 1px dotted #ddd;
-  }
-
-  table td:last-child {
-    border-bottom: 0;
-  }
-
-  table td:before {
-    content: attr(data-label);
-    float: left;
-    text-transform: uppercase;
-    font-weight: bold;
   }
 }
