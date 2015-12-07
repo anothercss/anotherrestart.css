@@ -100,7 +100,12 @@ blockquote {
 }
 
 blockquote {
+  display: block;
+  padding-left: 1.6rem;
+  margin-left: 0;
   margin-right: 0;
+
+  border-left: 3px solid #ddd;
 }
 
 ul,
@@ -148,13 +153,6 @@ code {
   white-space: pre;
   white-space: pre-wrap;
   vertical-align: bottom;
-}
-
-blockquote {
-  display: block;
-  margin-left: 0;
-  padding-left: 1.6rem;
-  border-left: 3px solid #ddd;
 }
 
 form {
