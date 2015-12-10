@@ -14,7 +14,7 @@
     "prod": "gulp prod"
   },
   "devDependencies": {
-    "autoprefixer-core": "^5.2.1",
+    "autoprefixer": "^6.1.2",
     "gulp": "^3.9.0",
     "gulp-csscomb": "^3.0.6",
     "gulp-cssmin": "^0.1.7",
@@ -24,6 +24,7 @@
     "gulp-rename": "^1.2.2",
     "moment": "^2.10.6",
     "postcss": "^5.0.5",
+    "postcss-calc": "^5.0.0",
     "postcss-custom-properties": "^4.2.0",
     "postcss-discard-comments": "^1.2.1"
   },

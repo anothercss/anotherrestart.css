@@ -20,10 +20,12 @@ var paths = {
 var processors = [
   require('postcss-custom-properties')({
     variables: {
-      "base-font-size": "16px"
+      "base-font-size": "16px",
+      "base-line-height": "1.6"
     }
   }),
-  require('autoprefixer-core')(),
+  require('postcss-calc')(),
+  require('autoprefixer')(),
   require('postcss-discard-comments')({
     removeAll: true
   })

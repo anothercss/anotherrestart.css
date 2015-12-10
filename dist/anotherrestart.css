@@ -1,4 +1,4 @@
-/*! anotherrestart.css | v0.1.0 | MIT | 7th Dec 2015 */
+/*! anotherrestart.css | v0.1.0 | MIT | 10th Dec 2015 */
  
 @-ms-viewport {
   width: device-width;
@@ -17,7 +17,6 @@
 
 html {
   font-size: 16px;
-  font-family: sans-serif;
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
@@ -147,11 +146,13 @@ ul ol {
 
 pre,
 code {
-  padding: 1em;
+  padding: 1.6rem;
   background-color: #ddd;
 }
 
 pre {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
   font-family: monospace;
   white-space: pre;
   white-space: pre-wrap;
@@ -178,8 +179,16 @@ fieldset {
 }
 
 legend {
-  padding-left: 1.6rem;
   padding-right: 1.6rem;
+  padding-left: 1.6rem;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  font-family: -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
 }
 
 label {
@@ -195,9 +204,9 @@ input[type='number'],
 input[type='url'],
 textarea {
   padding-top: 0.3rem;
+  padding-right: 0.8rem;
   padding-bottom: 0.3rem;
   padding-left: 0.8rem;
-  padding-right: 0.8rem;
   width: 100%;
   font-size: inherit;
   border: 2px solid #ddd;
@@ -207,16 +216,25 @@ button,
 input[type*='button'],
 input[type*='submit'],
 input[type*='reset'] {
-  font-size: 1rem;
-  line-height: 1rem;
   padding-top: 0.8rem;
+  padding-right: 1rem;
   padding-bottom: 0.8rem;
   padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: #fff;
-  color: #aaa;
+  font-size: 1rem;
+  line-height: 1rem;
   border: 2px solid #aaa;
   border-radius: 3px;
+  background-color: #fff;
+  color: #aaa;
+}
+
+select {
+  font-size: inherit;
+}
+
+input[type='checkbox'] {
+  width: 14px;
+  height: 14px;
 }
 
 input[type='text']:hover,
@@ -280,9 +298,9 @@ figure {
 
 img {
   display: block;
-  margin: 0;
   width: 100%;
   height: auto;
+  margin: 0;
 }
 table {
   width: 100%;
